@@ -14,6 +14,25 @@ const shuffle = (list) => {
     }
     return templist
 }
+
+const urls = ['https://i.ibb.co/sjvVrG3/fruit-plyh.jpg', 'https://i.ibb.co/g3tqj4w/fruit-zxcv.jpg', 'https://i.ibb.co/88Hy4rD/fruit-wert.jpg', 'https://i.ibb.co/NmNMLKF/fruit-astt.jpg', 'https://i.ibb.co/qp8Q1G6/fruit-dfgh.jpg', 'https://i.ibb.co/9thfVhB/fruit-hjkl.jpg', 'https://i.ibb.co/YtTfqvD/fruit-dcnj.jpg', 'https://i.ibb.co/CVwKM8Z/fruit-ecuh.jpg', 'https://i.ibb.co/ccNyKX0/fruit-uzxc.jpg']
+
+const randomUrls = shuffle(urls);
+
+const images = document.getElementsByClassName('card');
+
+for (let i = 0; i < images.length; i++) {
+    images[i].getElementsByTagName('img')[0].src=randomUrls[i];
+}
+
+let change = document.querySelector('h1');
+let newtext = document.createTextNode('!');
+
+change.appendChild(newtext)
+
+
+
+
 /*
     Step 1:
     - Create an array named 'urls' of eight strings containing the following values:

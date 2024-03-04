@@ -34,6 +34,22 @@ h1 {
     border-radius: 15px;
 }
 
+div#game {
+    display: grid;
+    grid-template-columns: 128px 128px 128px;
+    grid-template-rows: 128px 128px 128px;
+    column-gap: 16px;
+    row-gap:  16px;
+}
+
+img:hover {
+    transition:all ease-in-out;
+    transition-duration: 2s;
+    opacity: 1;
+}
+
+
+
 /* 
     Add styles as necessary to accomplish the following: 
 
